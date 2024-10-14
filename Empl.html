@@ -1,0 +1,24 @@
+# mayannks9.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+</head>
+<body>
+    <h2>Employee Form</h2>
+    <!-- Label for the text box -->
+    <label for="employeeName">Name - Employee:</label>
+    <!-- Text box for input -->
+    <input type="text" id="employeeName" name="employeeName" placeholder="Enter employee name">
+    <!-- Button -->
+    <button onclick="submitForm()">Submit</button>
+    <script>
+        function submitForm() {
+            var name = document.getElementById('employeeName').value;
+            alert("Employee Name: " + name);
+        }
+    </script>
+</body>
+</html>
